@@ -1,0 +1,270 @@
+/* Estilos oficiais inspirados no Wireframe SELPE (13 páginas) */
+
+.wireframe-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+  padding: 24px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wireframe-card {
+  width: 100%;
+  max-width: 480px;
+  min-height: 640px;
+  background: #ffffff;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Molduras por Perfil (Cores Oficiais do PDF) */
+.moldura-coordenador {
+  border: 12px solid #1769e0; /* Azul */
+}
+
+.moldura-monitor {
+  border: 12px solid #15803d; /* Verde */
+}
+
+.moldura-secretaria {
+  border: 12px solid #eab308; /* Amarelo / Ouro */
+}
+
+.moldura-aluno {
+  border: 12px solid #dc2626; /* Vermelho */
+}
+
+/* Cabeçalho SELPE oficial nas telas */
+.wireframe-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wireframe-logo-container {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.wireframe-logo-imagem {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.wireframe-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  line-height: 0.85;
+  font-weight: 900;
+  letter-spacing: -4px;
+}
+
+.wireframe-logo .azul {
+  color: #1477d4;
+}
+
+.wireframe-logo .verde {
+  color: #13852b;
+}
+
+.wireframe-subtitulo {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #334155;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+/* Tag / Badge de Título Superior */
+.wireframe-badge {
+  background-color: #fde047;
+  color: #0f172a;
+  border: 1.5px solid #0f172a;
+  padding: 10px 16px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Botões Amarelos em Lista (Modalidades / Associações) */
+.wireframe-btn-amarelo {
+  width: 100%;
+  background-color: #fde047;
+  color: #0f172a;
+  border: 1.5px solid #0f172a;
+  padding: 12px 16px;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.wireframe-btn-amarelo:hover {
+  background-color: #facc15;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.wireframe-btn-amarelo:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão Azul de Ação Primária */
+.wireframe-btn-azul {
+  width: 100%;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-weight: 800;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 12px;
+  transition: background-color 0.15s;
+}
+
+.wireframe-btn-azul:hover {
+  background-color: #1d4ed8;
+}
+
+/* Inputs estilizados para o login do wireframe */
+.wireframe-input-group {
+  margin-bottom: 18px;
+}
+
+.wireframe-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.wireframe-input {
+  width: 100%;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.wireframe-input::placeholder {
+  color: #cbd5e1;
+}
+
+.wireframe-input:focus {
+  background-color: #2563eb;
+  box-shadow: 0 0 0 2px #93c5fd;
+}
+
+/* Link de navegação inferior */
+.wireframe-link {
+  display: block;
+  text-align: center;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: underline;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.wireframe-link:hover {
+  color: #1d4ed8;
+}
+
+/* Grade de Horários e Check-in */
+.wireframe-horario-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.wireframe-horario-box {
+  background-color: #fde047;
+  color: #0f172a;
+  border: 1.5px solid #0f172a;
+  padding: 8px 14px;
+  font-weight: 800;
+  font-size: 14px;
+  min-width: 70px;
+  text-align: center;
+}
+
+.wireframe-action-btn {
+  color: #2563eb;
+  font-weight: 800;
+  font-size: 14px;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.wireframe-action-btn:hover {
+  color: #1d4ed8;
+}
+
+/* Bolinhas de Presença Verde e Vermelha */
+.indicador-presenca {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 0 4px;
+  vertical-align: middle;
+}
+
+.indicador-presenca.verde {
+  background-color: #16a34a;
+  box-shadow: 0 0 6px rgba(22, 163, 74, 0.4);
+}
+
+.indicador-presenca.vermelho {
+  background-color: #dc2626;
+  box-shadow: 0 0 6px rgba(220, 38, 38, 0.4);
+}
