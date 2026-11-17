@@ -1,0 +1,41 @@
+{
+  "name": "selpe-backend",
+  "version": "1.0.0",
+  "description": "Backend API para o SELPE (Secretaria de Esportes e Lazer de Peruíbe)",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir dist",
+    "start": "node dist/server.js",
+    "seed": "tsx src/seed.ts",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@fastify/helmet": "^13.1.1",
+    "@fastify/jwt": "^10.2.6",
+    "@fastify/multipart": "^10.1.1",
+    "@fastify/rate-limit": "^11.2.0",
+    "@fastify/swagger": "^9.4.2",
+    "@fastify/swagger-ui": "^6.1.2",
+    "@tensorflow/tfjs": "^4.22.0",
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "fastify-type-provider-zod": "^4.0.2",
+    "file-type": "^22.0.2",
+    "firebase-admin": "^13.1.0",
+    "nsfwjs": "^4.3.0",
+    "pdfkit": "^0.16.0",
+    "sharp": "^0.35.4",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@types/pdfkit": "^0.13.9",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}

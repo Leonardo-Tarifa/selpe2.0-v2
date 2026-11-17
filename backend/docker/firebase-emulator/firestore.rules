@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Todo acesso e mutação aos dados do SELPE é intermediado pelo Backend Fastify
+    // que executa como Service Account administrativa com Firebase Admin SDK.
+    // O acesso direto via Client SDKs é bloqueado para impedir bypass das regras de negócio.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
